@@ -1,0 +1,161 @@
+/* Đặt lại khoảng cách mặc định */
+* {
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+/* Định dạng cho tiêu đề */
+#TIEU_DE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-family: monospace;
+    font-size: 34px;
+    background-color: #06a1a1;
+    width: 100vw; /* Chiếm toàn bộ chiều rộng cửa sổ trình duyệt */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ĐỊNH DẠNG MẤY CÁI TIÊU ĐỀ LỚN */
+#TUA_DE_DOI_LOI_MO_DAU,
+#tua_de_doi_chut_ve_toi,
+#tua_de_ve_trang_web_nay,
+#tua_de_tai_sao_lai_la_ktgame,
+#tua_de_danh_gia {
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ĐỊNH DẠNG MẤY CÁI TIÊU ĐỀ NHỎ */
+#tua_de_thong_tin_ca_nhan,
+#tua_de_so_thich,
+#tua_de_thong_tin_lien_lac,
+#tua_de_mot_so_anh_cua_toi {
+    font-size: 18px;
+    font-family: cursive;
+}
+
+#thongtin_so_thich,
+#dong_1_thongtin_web,
+#dong_2_thongtin_web {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+/* Định dạng thông tin đôi lời mở đầu */
+#FULL_BODY,
+#VE_TRANG_WEB_NAY,
+#TAI_SAO_LAI_LA_KTGAME {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* CHỈNH KÍCH CỞ ẢNH */
+#ANH_1,
+#ANH_2,
+#ANH_3 {
+    width: 110px; /* Điều chỉnh kích thước chiều rộng */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+#ANH_3
+{
+    height: 100px;
+}
+
+/* Định dạng nền cho trang */
+html {
+    background-color: rgb(236, 236, 236);
+}
+
+/* CSS cho đánh giá sao */
+.star-rating {
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: url('star.png') repeat-x; /* Sử dụng hình ảnh của ngôi sao */
+}
+
+.star-rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    opacity: 1;
+}
+
+.star-rating label:hover:before,
+.star-rating label:hover ~ label:before,
+.star-rating input:checked ~ label:before {
+    content: '\2605';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 50px;
+    color: gold;
+}
+
+/* CSS cho form tin nhắn */
+#message-box {
+    margin-top: 20px;
+}
+
+#message-box input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#message-box button {
+    padding: 10px 20px;
+    background-color: #06a1a1;
+    color: rgb(19, 135, 177);
+    border: none;
+    cursor: pointer;
+
+}
+
+/* CSS cho thông báo thành công */
+#success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* CSS cho footer */
+#thongtin_cuoi_trang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: #0d6ce9;
+    width: 100vw; /* Chiếm toàn bộ chiều rộng cửa sổ trình duyệt */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
